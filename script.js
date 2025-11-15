@@ -215,3 +215,24 @@ function revealSections() {
 
 window.addEventListener("scroll", revealSections);
 window.addEventListener("load", revealSections);
+// Sticky header background change on scroll
+const header = document.getElementById('header');
+window.addEventListener('scroll', () => {
+    if(window.scrollY > 50){
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+});
+
+// Fade-in on scroll
+const boxes = document.querySelectorAll('.box');
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.classList.add('visible');
+        }
+    });
+}, { threshold: 0.1 });
+
+boxes.forEach(box => observer.observe(box));
