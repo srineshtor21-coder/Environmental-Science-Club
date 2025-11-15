@@ -196,3 +196,22 @@ style.textContent = `
 }
 `;
 document.head.appendChild(style);
+// ========== PAGE FADE IN ==========
+window.addEventListener("load", () => {
+    document.body.classList.add("page-loaded");
+});
+
+// ========== SECTION SCROLL REVEAL ==========
+function revealSections() {
+    document.querySelectorAll(".reveal").forEach(section => {
+        const rect = section.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+
+        if (rect < windowHeight - 100) {
+            section.classList.add("visible");
+        }
+    });
+}
+
+window.addEventListener("scroll", revealSections);
+window.addEventListener("load", revealSections);
