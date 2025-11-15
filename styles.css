@@ -386,3 +386,24 @@ Responsive Design
     width: 100%;
   }
 }
+/* PAGE FADE IN */
+body {
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+
+body.page-loaded {
+    opacity: 1;
+}
+
+/* SECTION SCROLL REVEAL */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 0.8s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
