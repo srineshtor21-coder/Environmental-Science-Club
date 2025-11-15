@@ -4,52 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Environmental Science Club</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f8f5;
-            color: #333;
-        }
-        header, footer {
-            background-color: #2e7d32;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        nav a {
-            margin: 0 10px;
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .container {
-            max-width: 900px;
-            margin: auto;
-            padding: 20px;
-        }
-        h1, h2, h3 {
-            color: #2e7d32;
-        }
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            margin: 10px 0;
-            background-color: #2e7d32;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        section {
-            margin-bottom: 40px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
+<header id="header">
     <h1>Environmental Science Club</h1>
     <nav>
         <a href="#about">About</a>
@@ -59,81 +18,53 @@
     </nav>
 </header>
 
-<div class="container">
-
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Our Club</h2>
-        <p>The Environmental Science Club is officially approved and ready to make an impact. We bring together students from all majors who are passionate about sustainability and environmental action.</p>
-
-        <h3>🌍 Our Mission</h3>
-        <p>To create measurable environmental impact through collaborative projects, hackathons, and community engagement while building valuable skills for your future.</p>
-
-        <h3>👥 Who We Are</h3>
-        <p>A diverse community of students from CS, Medicine, and other majors working together to solve environmental challenges through innovation and technology.</p>
-
-        <h3>🎯 Our Goal</h3>
-        <p>Enable every member to highlight achievements like "Won X Hackathon" or "Organized event with X members" on college applications and resumes.</p>
+<main>
+    <section id="about" class="section">
+        <h2 class="page-title">About Our Club</h2>
+        <div class="box">
+            <p>The Environmental Science Club is officially approved...</p>
+            <h3>🌍 Our Mission</h3>
+            <p>To create measurable environmental impact...</p>
+        </div>
     </section>
 
-    <!-- Activities Section -->
-    <section id="activities">
-        <h2>What We Do</h2>
-
-        <h3>💻 Hackathons</h3>
-        <p>Create and participate in environmental science hackathons as a group. Build innovative solutions to real-world sustainability challenges and compete for recognition.</p>
-        <ul>
-            <li>Participate in national competitions</li>
-            <li>Organize school-wide events</li>
-            <li>Collaborate on environmental tech projects</li>
-        </ul>
-
-        <h3>🌐 Website Development</h3>
-        <p>Build and maintain our club website to showcase projects, share resources, and connect with the community.</p>
-
-        <h3>📱 Social Media</h3>
-        <p>Maintain an active Instagram presence promoting sustainability, sharing tips, and raising environmental awareness.</p>
-
-        <h3>✨ More to Come</h3>
-        <p>Additional exciting initiatives and projects will be revealed during our first meeting. Stay tuned for more opportunities!</p>
+    <section id="activities" class="section">
+        <h2 class="page-title">What We Do</h2>
+        <div class="box">
+            <h3>💻 Hackathons</h3>
+            <ul>
+                <li>Participate in competitions</li>
+                <li>Organize events</li>
+                <li>Collaborate on tech projects</li>
+            </ul>
+        </div>
     </section>
 
-    <!-- Why Join Section -->
-    <section id="why-join">
-        <h2>Why You Should Join</h2>
-        <ol>
-            <li><strong>Build Your Portfolio:</strong> Gain hands-on experience with real projects regardless of your major. Create tangible work samples that showcase your skills to future employers or colleges.</li>
-            <li><strong>Resume Booster:</strong> Stand out with achievements like hackathon wins, event organization, and leadership roles. Perfect for college applications and job interviews.</li>
-            <li><strong>Flexible Commitment:</strong> Choose your level of involvement. Whether you want to lead initiatives or participate casually, there is a place for you in our community.</li>
-            <li><strong>All Majors Welcome:</strong> From Computer Science to Medicine and beyond, every major brings unique perspectives to solving environmental challenges.</li>
-            <li><strong>Leadership Opportunities:</strong> Officer positions will open in the coming weeks after district approval. Develop leadership skills and take charge of meaningful projects.</li>
-            <li><strong>Measurable Impact:</strong> Create real change in environmental sustainability while documenting your contributions for future opportunities.</li>
-        </ol>
+    <section id="why-join" class="section">
+        <h2 class="page-title">Why You Should Join</h2>
+        <div class="box">
+            <ol>
+                <li>Build Your Portfolio</li>
+                <li>Resume Booster</li>
+                <li>Flexible Commitment</li>
+            </ol>
+        </div>
     </section>
 
-    <!-- Meeting Info & Join -->
-    <section id="join">
-        <h2>Meeting Information</h2>
-        <p>📅 Meetings held bi-weekly or once a month (to be decided by members)</p>
-        <p>🏆 Officer positions: Applications opening soon after district approval</p>
-        <p>✅ Status: Officially approved by the school</p>
-
-        <h2>Ready to Make an Impact?</h2>
-        <p>Join the Environmental Science Club today and start building your portfolio, gaining experience, and making a difference in sustainability.</p>
-
-        <a href="https://www.remind.com/join/env-sci-01" class="btn" target="_blank" rel="noopener noreferrer" aria-label="Join our Remind group at env-sci-01">
-            📱 Join Remind: @env-sci-01
-        </a>
+    <section id="join" class="section">
+        <h2 class="page-title">Join the Club</h2>
+        <div class="box">
+            <p>📅 Meetings held bi-weekly</p>
+            <p>🏆 Officer positions opening soon</p>
+            <a href="https://www.remind.com/join/env-sci-01" class="btn">Join Remind</a>
+        </div>
     </section>
-
-</div>
+</main>
 
 <footer>
-    <p>Environmental Science Club - Building a sustainable future through innovation, collaboration, and action.</p>
-    <p>Quick Links: About | Activities | Benefits | Join</p>
-    <p>Connect: Remind: @env-sci-01 | Instagram: Coming Soon</p>
-    <p>© 2025 Environmental Science Club. All rights reserved.</p>
+    <p>Environmental Science Club — Building a sustainable future.</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
