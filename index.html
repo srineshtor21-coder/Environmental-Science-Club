@@ -3,95 +3,284 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Environmental Science Club - Join us to participate in hackathons, competitions, and sustainability projects while building valuable skills.">
     <title>Environmental Science Club</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header>
-    <h1>Environmental Science Club</h1>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#activities">Activities</a>
-        <a href="#why-join">Why Join</a>
-        <a href="#join">Join</a>
+<header role="banner">
+    <nav class="nav-container" role="navigation" aria-label="Main navigation">
+        <div class="logo">
+            <span class="logo-icon" aria-hidden="true">🌍</span>
+            <span class="logo-text">Environmental Science Club</span>
+        </div>
+        <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span class="hamburger"></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#activities">Activities</a></li>
+            <li><a href="#competitions">Competitions</a></li>
+            <li><a href="#opportunities">Opportunities</a></li>
+            <li><a href="#why-join">Why Join</a></li>
+            <li><a href="#join" class="nav-cta">Join Now</a></li>
+        </ul>
     </nav>
 </header>
 
-<div class="container">
+<main>
+    <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-content">
+            <h1 id="hero-title" class="hero-title">Building a Sustainable Future Together</h1>
+            <p class="hero-subtitle">Join a diverse community of students creating measurable environmental impact through innovation, competitions, and collaborative projects.</p>
+            <div class="hero-cta">
+                <a href="#join" class="btn btn-primary">Join the Club</a>
+                <a href="#about" class="btn btn-secondary">Learn More</a>
+            </div>
+        </div>
+    </section>
 
-    <!-- About Section -->
     <section id="about" class="section">
-        <h2 class="page-title">About Our Club</h2>
-        <div class="box reveal">
-            <h3>🌍 Our Mission</h3>
-            <p>To create measurable environmental impact through collaborative projects, hackathons, and community engagement while building valuable skills for your future.</p>
-
-            <h3>👥 Who We Are</h3>
-            <p>A diverse community of students from CS, Medicine, and other majors working together to solve environmental challenges through innovation and technology.</p>
-
-            <h3>🎯 Our Goal</h3>
-            <p>Enable every member to highlight achievements like "Won X Hackathon" or "Organized event with X members" on college applications and resumes.</p>
+        <div class="container">
+            <h2 class="section-title">About Our Club</h2>
+            <div class="cards-grid">
+                <article class="card reveal" aria-labelledby="mission-title">
+                    <div class="card-icon" aria-hidden="true">🌍</div>
+                    <h3 id="mission-title">Our Mission</h3>
+                    <p>To create measurable environmental impact through collaborative projects, hackathons, and community engagement while building valuable skills for your future.</p>
+                </article>
+                <article class="card reveal" aria-labelledby="who-title">
+                    <div class="card-icon" aria-hidden="true">👥</div>
+                    <h3 id="who-title">Who We Are</h3>
+                    <p>A diverse community of students from CS, Medicine, and other majors working together to solve environmental challenges through innovation and technology.</p>
+                </article>
+                <article class="card reveal" aria-labelledby="goal-title">
+                    <div class="card-icon" aria-hidden="true">🎯</div>
+                    <h3 id="goal-title">Our Goal</h3>
+                    <p>Enable every member to highlight achievements like "Won X Hackathon" or "Organized event with X members" on college applications and resumes.</p>
+                </article>
+            </div>
         </div>
     </section>
 
-    <!-- Activities Section -->
     <section id="activities" class="section section-light">
-        <h2 class="page-title">What We Do</h2>
-        <div class="box reveal">
-            <h3>💻 Hackathons</h3>
-            <p>Create and participate in environmental science hackathons as a group. Build innovative solutions to real-world sustainability challenges and compete for recognition.</p>
-            <ul>
-                <li>Participate in national competitions</li>
-                <li>Organize school-wide events</li>
-                <li>Collaborate on environmental tech projects</li>
-            </ul>
-
-            <h3>🌐 Website Development</h3>
-            <p>Build and maintain our club website to showcase projects, share resources, and connect with the community.</p>
-
-            <h3>📱 Social Media</h3>
-            <p>Maintain an active Instagram presence promoting sustainability, sharing tips, and raising environmental awareness.</p>
+        <div class="container">
+            <h2 class="section-title">What We Do</h2>
+            <div class="activity-cards">
+                <article class="activity-card reveal" aria-labelledby="hackathons-title">
+                    <div class="activity-icon" aria-hidden="true">💻</div>
+                    <h3 id="hackathons-title">Hackathons</h3>
+                    <p>Create and participate in environmental science hackathons as a group. Build innovative solutions to real-world sustainability challenges and compete for recognition.</p>
+                    <ul>
+                        <li>Participate in national competitions</li>
+                        <li>Organize school-wide events</li>
+                        <li>Collaborate on environmental tech projects</li>
+                    </ul>
+                </article>
+                <article class="activity-card reveal" aria-labelledby="social-title">
+                    <div class="activity-icon" aria-hidden="true">📱</div>
+                    <h3 id="social-title">Social Media Management</h3>
+                    <p>Help maintain our active social media presence, promoting sustainability, sharing environmental tips, and raising awareness about climate action.</p>
+                    <ul>
+                        <li>Create engaging content for Instagram</li>
+                        <li>Share project updates and achievements</li>
+                        <li>Connect with other environmental organizations</li>
+                    </ul>
+                </article>
+                <article class="activity-card reveal" aria-labelledby="website-title">
+                    <div class="activity-icon" aria-hidden="true">🌐</div>
+                    <h3 id="website-title">Website Development</h3>
+                    <p>Build and maintain our club website to showcase projects, share resources, and connect with the community.</p>
+                    <ul>
+                        <li>Design and develop web features</li>
+                        <li>Document project progress</li>
+                        <li>Create resource libraries</li>
+                    </ul>
+                </article>
+            </div>
         </div>
     </section>
 
-    <!-- Why Join Section -->
+    <section id="competitions" class="section">
+        <div class="container">
+            <h2 class="section-title">Competitions & Achievements</h2>
+            <p class="section-intro">Test your skills and showcase your talent in environmental science competitions. Build your resume with tangible achievements.</p>
+            <div class="competition-grid">
+                <article class="competition-card reveal" aria-labelledby="comp1-title">
+                    <div class="competition-badge">Upcoming</div>
+                    <h3 id="comp1-title">Environmental Hackathons</h3>
+                    <p>Compete in regional and national environmental science hackathons. Create innovative solutions to sustainability challenges.</p>
+                    <div class="competition-details">
+                        <span class="detail"><strong>Type:</strong> Team & Individual</span>
+                        <span class="detail"><strong>Level:</strong> All Skill Levels</span>
+                    </div>
+                </article>
+                <article class="competition-card reveal" aria-labelledby="comp2-title">
+                    <div class="competition-badge">Annual</div>
+                    <h3 id="comp2-title">Sustainability Challenge</h3>
+                    <p>Design and implement a sustainability project in your community. Present your impact to judges and win recognition.</p>
+                    <div class="competition-details">
+                        <span class="detail"><strong>Type:</strong> Project-Based</span>
+                        <span class="detail"><strong>Level:</strong> Beginner Friendly</span>
+                    </div>
+                </article>
+                <article class="competition-card reveal" aria-labelledby="comp3-title">
+                    <div class="competition-badge">Ongoing</div>
+                    <h3 id="comp3-title">Innovation Showcase</h3>
+                    <p>Share your environmental innovations and research. Network with peers, mentors, and potential sponsors.</p>
+                    <div class="competition-details">
+                        <span class="detail"><strong>Type:</strong> Showcase</span>
+                        <span class="detail"><strong>Level:</strong> All Levels</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="opportunities" class="section section-light">
+        <div class="container">
+            <h2 class="section-title">Member Opportunities</h2>
+            <div class="opportunities-grid">
+                <article class="opportunity-card reveal" aria-labelledby="opp1-title">
+                    <div class="opportunity-icon" aria-hidden="true">📊</div>
+                    <h3 id="opp1-title">Member Recruitment</h3>
+                    <p>Help grow our community by recruiting members to meet monthly quotas. Develop leadership and communication skills.</p>
+                    <div class="opportunity-tag">Leadership</div>
+                </article>
+                <article class="opportunity-card reveal" aria-labelledby="opp2-title">
+                    <div class="opportunity-icon" aria-hidden="true">📝</div>
+                    <h3 id="opp2-title">Meeting Documentation</h3>
+                    <p>Take notes during meetings and help maintain organized records of our discussions, decisions, and action items.</p>
+                    <div class="opportunity-tag">Organization</div>
+                </article>
+                <article class="opportunity-card reveal" aria-labelledby="opp3-title">
+                    <div class="opportunity-icon" aria-hidden="true">📈</div>
+                    <h3 id="opp3-title">Project Progress Tracking</h3>
+                    <p>Log and monitor project milestones, ensuring teams stay on track and achievements are properly documented.</p>
+                    <div class="opportunity-tag">Management</div>
+                </article>
+                <article class="opportunity-card reveal" aria-labelledby="opp4-title">
+                    <div class="opportunity-icon" aria-hidden="true">🎨</div>
+                    <h3 id="opp4-title">Content Creation</h3>
+                    <p>Create engaging content for our social media channels and website. Combine creativity with environmental advocacy.</p>
+                    <div class="opportunity-tag">Creative</div>
+                </article>
+            </div>
+        </div>
+    </section>
+
     <section id="why-join" class="section">
-        <h2 class="page-title">Why You Should Join</h2>
-        <div class="box reveal">
-            <ol>
-                <li><strong>Build Your Portfolio:</strong> Gain hands-on experience with real projects regardless of your major. Create tangible work samples that showcase your skills to future employers or colleges.</li>
-                <li><strong>Resume Booster:</strong> Stand out with achievements like hackathon wins, event organization, and leadership roles. Perfect for college applications and job interviews.</li>
-                <li><strong>Flexible Commitment:</strong> Choose your level of involvement. Whether you want to lead initiatives or participate casually, there is a place for you in our community.</li>
-                <li><strong>All Majors Welcome:</strong> From Computer Science to Medicine and beyond, every major brings unique perspectives to solving environmental challenges.</li>
-                <li><strong>Leadership Opportunities:</strong> Officer positions will open in the coming weeks after district approval. Develop leadership skills and take charge of meaningful projects.</li>
-                <li><strong>Measurable Impact:</strong> Create real change in environmental sustainability while documenting your contributions for future opportunities.</li>
-            </ol>
+        <div class="container">
+            <h2 class="section-title">Why You Should Join</h2>
+            <div class="benefits-list reveal">
+                <article class="benefit-item" aria-labelledby="benefit1">
+                    <div class="benefit-number" aria-hidden="true">1</div>
+                    <div class="benefit-content">
+                        <h3 id="benefit1">Build Your Portfolio</h3>
+                        <p>Gain hands-on experience with real projects regardless of your major. Create tangible work samples that showcase your skills to future employers or colleges.</p>
+                    </div>
+                </article>
+                <article class="benefit-item" aria-labelledby="benefit2">
+                    <div class="benefit-number" aria-hidden="true">2</div>
+                    <div class="benefit-content">
+                        <h3 id="benefit2">Resume Booster</h3>
+                        <p>Stand out with achievements like hackathon wins, event organization, and leadership roles. Perfect for college applications and job interviews.</p>
+                    </div>
+                </article>
+                <article class="benefit-item" aria-labelledby="benefit3">
+                    <div class="benefit-number" aria-hidden="true">3</div>
+                    <div class="benefit-content">
+                        <h3 id="benefit3">Flexible Commitment</h3>
+                        <p>Choose your level of involvement. Whether you want to lead initiatives or participate casually, there is a place for you in our community.</p>
+                    </div>
+                </article>
+                <article class="benefit-item" aria-labelledby="benefit4">
+                    <div class="benefit-number" aria-hidden="true">4</div>
+                    <div class="benefit-content">
+                        <h3 id="benefit4">All Majors Welcome</h3>
+                        <p>From Computer Science to Medicine and beyond, every major brings unique perspectives to solving environmental challenges.</p>
+                    </div>
+                </article>
+                <article class="benefit-item" aria-labelledby="benefit5">
+                    <div class="benefit-number" aria-hidden="true">5</div>
+                    <div class="benefit-content">
+                        <h3 id="benefit5">Leadership Opportunities</h3>
+                        <p>Officer positions will open in the coming weeks after district approval. Develop leadership skills and take charge of meaningful projects.</p>
+                    </div>
+                </article>
+                <article class="benefit-item" aria-labelledby="benefit6">
+                    <div class="benefit-number" aria-hidden="true">6</div>
+                    <div class="benefit-content">
+                        <h3 id="benefit6">Measurable Impact</h3>
+                        <p>Create real change in environmental sustainability while documenting your contributions for future opportunities.</p>
+                    </div>
+                </article>
+            </div>
         </div>
     </section>
 
-    <!-- Join Section -->
-    <section id="join" class="section section-light">
-        <h2 class="page-title">Join Us</h2>
-        <div class="box reveal">
-            <p>📅 Meetings held bi-weekly or once a month (to be decided by members)</p>
-            <p>🏆 Officer positions: Applications opening soon after district approval</p>
-            <p>✅ Status: Officially approved by the school</p>
-
-            <a href="https://www.remind.com/join/env-sci-01" class="btn" target="_blank" rel="noopener noreferrer">
-                📱 Join Remind: @env-sci-01
-            </a>
+    <section id="join" class="section section-cta">
+        <div class="container">
+            <div class="join-box reveal">
+                <h2 class="section-title">Ready to Make a Difference?</h2>
+                <p class="join-intro">Join us in building a sustainable future through innovation and collaboration.</p>
+                <div class="join-details">
+                    <div class="join-detail-item">
+                        <span class="detail-icon" aria-hidden="true">📅</span>
+                        <p><strong>Meetings:</strong> Bi-weekly or monthly (member-decided)</p>
+                    </div>
+                    <div class="join-detail-item">
+                        <span class="detail-icon" aria-hidden="true">🏆</span>
+                        <p><strong>Officer Positions:</strong> Applications opening soon</p>
+                    </div>
+                    <div class="join-detail-item">
+                        <span class="detail-icon" aria-hidden="true">✅</span>
+                        <p><strong>Status:</strong> Officially approved by the school</p>
+                    </div>
+                </div>
+                <div class="join-actions">
+                    <a href="https://www.remind.com/join/env-sci-01" class="btn btn-primary btn-large" target="_blank" rel="noopener noreferrer">
+                        Join Remind: @env-sci-01
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
+</main>
 
-</div>
-
-<footer>
-    <p>Environmental Science Club - Building a sustainable future through innovation, collaboration, and action.</p>
-    <p>Quick Links: About | Activities | Why Join | Join</p>
-    <p>Connect: Remind: @env-sci-01 | Instagram: Coming Soon</p>
-    <p>© 2025 Environmental Science Club. All rights reserved.</p>
+<footer role="contentinfo">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Environmental Science Club</h3>
+            <p>Building a sustainable future through innovation, collaboration, and action.</p>
+        </div>
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#activities">Activities</a></li>
+                <li><a href="#competitions">Competitions</a></li>
+                <li><a href="#join">Join Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Connect</h4>
+            <p>Remind: @env-sci-01</p>
+            <p>Instagram: Coming Soon</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Environmental Science Club. All rights reserved.</p>
+    </div>
 </footer>
+
+<button id="scroll-to-top" aria-label="Scroll to top" class="scroll-top-btn">
+    <span aria-hidden="true">↑</span>
+</button>
 
 <script src="script.js"></script>
 </body>
